@@ -16,7 +16,7 @@ function App() {
   const [bookingDetails, setBookingDetails] = useState(null);
 
   useEffect(() => {
-    fetch('https://imovies-backend-iy11.onrender.com')
+    fetch('https://imovies-backend-iy11.onrender.com/api/movies')
       .then((res) => res.json())
       .then((data) => setMovies(data))
       .catch((err) => console.log(err));
